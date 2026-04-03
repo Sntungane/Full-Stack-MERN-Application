@@ -1,9 +1,10 @@
 // Import axios for making HTTP requests
 import axios from "axios";
+  const BASE_URL = import.meta.env.VITE_API_BASE_URL
 
 // Create an axios instance with the base URL for all API requests
 const API = axios.create({
-  baseURL: "http://localhost:5050/api",
+  baseURL:    BASE_URL + "/api" 
 });
 
 // Interceptor that runs before every API request
